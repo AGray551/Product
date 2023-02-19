@@ -10,35 +10,28 @@ import static java.nio.file.StandardOpenOption.CREATE;
 public class ProductWriter {
     public static void main(String[] args)
     {
-        ArrayList<String> people = new ArrayList<>();
+        ArrayList<Product> products = new ArrayList<>();
         Scanner in = new Scanner(System.in);
 
         File workingDirectory = new File(System.getProperty("user.dir"));
-        Path file = Paths.get(workingDirectory.getPath() + "\\src\\ProductTestData.txt");
+        Path file = Paths.get(workingDirectory.getPath() + "\\src\\ProductTestData.csv");
 
         boolean done = false;
 
-        String personRec = "";
-        String ID = "";
-        String Name = "";
-        String Description = "";
-        double Cost = 0;
-
-
         do {
-            ID = SafeInput.getNonZeroLenString(in,"Enter the ID [6 digits]: ");
-            Name = SafeInput.getNonZeroLenString(in,"Enter the name: ");
-            Description = SafeInput.getNonZeroLenString(in,"Enter the description: ");
-            Cost = SafeInput.getDouble(in, "Enter the cost: ");
+            String ID = SafeInput.getNonZeroLenString(in,"Enter the ID [6 digits]: ");
+            String Name = SafeInput.getNonZeroLenString(in,"Enter the name: ");
+            String Description = SafeInput.getNonZeroLenString(in,"Enter the description: ");
+            double Cost = SafeInput.getDouble(in, "Enter the cost: ");
 
-            personRec = ID + ", " + Name+ ", " + Description+ ", " + Cost;
-            people.add(personRec);
+            Product product = new Product(ID, Name, Description, Cost);
+            products.add(product);
 
             done = SafeInput.getYNConfirm(in, "Are you done?" );
 
         }while(!done);
 
-        for(String p: people)
+        for(Product p: products)
             System.out.println(p);
 
         try
@@ -52,11 +45,10 @@ public class ProductWriter {
 
             // Finally can write the file LOL!
 
-            for(String rec : people)
+            for(Product product : products)
             {
-                writer.write(rec, 0, rec.length());  // stupid syntax for write rec
-                // 0 is where to start (1st char) the write
-                // rec. length() is how many chars to write (all)
+                String csvRecord = product.toCSVRecord();
+                writer.write(csvRecord, 0, csvRecord.length());
                 writer.newLine();  // adds the new line
 
             }
