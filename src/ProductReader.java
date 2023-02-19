@@ -51,7 +51,8 @@ public class ProductReader
                 {
                     rec = reader.readLine();
                     String[] parts = rec.split(",");
-                    System.out.printf("\n%07d %-12s %-12s %16.2f", Integer.parseInt(parts[0]), parts[1], parts[2], Double.parseDouble(parts[3]));
+                    System.out.printf("%07d  %-10s  %-20s  $%8.2f%n",
+                            Integer.parseInt(parts[0]), parts[1], parts[2], Double.parseDouble(parts[3]));
                 }
                 reader.close(); // must close the file to seal it and flush buffer
                 System.out.println("\n\nData file read!");

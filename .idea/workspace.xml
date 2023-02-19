@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b495d2c-aaee-4101-a9b8-89b7e75c20a7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/ProductTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Product.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProductWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +44,16 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/Gray/Documents/Programming 2/My FIles/Product/src"
+    "last_opened_file_path": "C:/Users/Gray/Documents/Programming 2/My FIles/Product",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -63,7 +67,14 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ProductWriter">
+  <component name="RunManager" selected="Application.ProductReader">
+    <configuration name="ProductReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProductReader" />
+      <module name="Product" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductWriter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ProductWriter" />
       <module name="Product" />
@@ -82,6 +93,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProductReader" />
         <item itemvalue="Application.ProductWriter" />
         <item itemvalue="JUnit.ProductTest" />
       </list>
@@ -95,7 +107,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676842386153</updated>
+      <workItem from="1676848729002" duration="318000" />
+      <workItem from="1676849161354" duration="1356000" />
     </task>
+    <task id="LOCAL-00001" summary="Commit 2">
+      <created>1676847639152</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676847639152</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 2" />
   </component>
 </project>
